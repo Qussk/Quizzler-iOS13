@@ -47,6 +47,7 @@ class ViewController: UIViewController {
     //3-1.클릭할 때마다
     self.QuestionLabel.text = self.quizManager.letQuestiontext()
     self.scoreLabel.text = "score = \(self.quizManager.letScore())"
+    self.ProgressView.progress = self.quizManager.letProBar()
     
     //답안 체크
     let check = self.quizManager.letAnswer()

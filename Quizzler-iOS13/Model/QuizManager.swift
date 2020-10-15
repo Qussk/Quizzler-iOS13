@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 //1-0. 앱의 모든 데이터를 관리하는 QuizManager라는 데이터모델을 만듦.
 class QuizManager {
   
@@ -46,6 +45,8 @@ class QuizManager {
     //2-4.만약 11번째 보다 작으면 '문제번호+=1', 12번째 문제 도달시 '문제[0]'으로 초기화
     if number < 11 {
       number += 1
+      //2-5. 문제넘길때마다 pro게이지 상승(full게이지는 number을 1로 나눈 값)
+      pro = Double(number)/Double(self.quizArray.count)
     }else{
       number = 0
       score = 0
@@ -55,9 +56,8 @@ class QuizManager {
   }
   
   //진행률 반환
-  func letProBar(){
-    //2-5. 문제넘길때마다 pro게이지 상승(full게이지는 number을 1로 나눈 값)
-    pro = Double(number)/Double(self.quizArray[number].a.count)
+  func letProBar() -> Float{
+  return Float(pro)
   }
   
   //답안 반환
