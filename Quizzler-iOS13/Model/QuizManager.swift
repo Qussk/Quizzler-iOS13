@@ -48,6 +48,8 @@ class QuizManager {
       number += 1
     }else{
       number = 0
+      score = 0
+      pro = 0.0
     }
     return self.quizArray[number].q
   }
