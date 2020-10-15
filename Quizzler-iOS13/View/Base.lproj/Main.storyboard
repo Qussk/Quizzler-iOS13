@@ -93,7 +93,9 @@
                     <connections>
                         <outlet property="ProgressView" destination="TXm-qh-7Xg" id="3UY-mY-tEn"/>
                         <outlet property="QuestionLabel" destination="rSI-li-mhO" id="2g6-jh-rIr"/>
+                        <outlet property="falseButton" destination="tbn-vQ-GyC" id="JZB-Hl-djP"/>
                         <outlet property="scoreLabel" destination="5rF-xx-rJu" id="4Np-o5-b31"/>
+                        <outlet property="trueButton" destination="oVw-Hl-IRe" id="NY8-Ts-DQe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

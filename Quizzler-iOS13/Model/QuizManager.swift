@@ -36,6 +36,9 @@ class QuizManager {
   //2-3. 함수 만들기
   //스코어 반환
   func letScore()->Int{
+    if self.quizArray[number].a == "True"{
+    score += 1
+    }
     return score
   }
   //문제 반환 -> number값에 따른 문제변경
@@ -55,6 +58,10 @@ class QuizManager {
     pro = 1/Double(number)
   }
   
-  
+  //답안 반환
+  func letAnswer()-> String {
+    return self.quizArray[number].a
+  }
   
 }
+
