@@ -55,7 +55,7 @@ class QuizManager {
   //진행률 반환
   func letProBar(){
     //2-5. 문제넘길때마다 pro게이지 상승(full게이지는 number을 1로 나눈 값)
-    pro = 1/Double(number)
+    pro = Double(number)/Double(self.quizArray[number].a.count)
   }
   
   //답안 반환

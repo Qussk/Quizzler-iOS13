@@ -58,11 +58,12 @@ class ViewController: UIViewController {
       sender.backgroundColor = .red
     }
     
-    //4-1.      
+    //4-1. 0.3초 뒤에 timerColorTap을 이용한 버튼의backgroundColor clear처리
     myTimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(timerColorTap), userInfo: nil, repeats: false)
     
   }
 
+  //4-2
   @objc func timerColorTap(button : UIButton){
     self.trueButton.backgroundColor = .clear
     self.falseButton.backgroundColor = .clear
