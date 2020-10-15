@@ -12,7 +12,8 @@ class ViewController: UIViewController {
   
   //2-1.quizManager에 QuizManager할당.
   let quizManager = QuizManager()
- 
+  //4.타이머로 backgrounColor시간 지정
+  var myTimer = Timer()
   
   //스코어,질문,진행률바
   @IBOutlet weak var scoreLabel: UILabel!
@@ -50,7 +51,6 @@ class ViewController: UIViewController {
     //답안 체크
     let check = self.quizManager.letAnswer()
     
-    
     //3-2.답안이 "True"이면 backgroundColor변경
     if check == trueButton.currentTitle {
       sender.backgroundColor = .green
@@ -58,11 +58,12 @@ class ViewController: UIViewController {
       sender.backgroundColor = .red
     }
     
-   
+    //4-1.      
+    myTimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(timerColorTap), userInfo: nil, repeats: false)
     
   }
 
-  @objc func timerColor(button : UIButton){
+  @objc func timerColorTap(button : UIButton){
     self.trueButton.backgroundColor = .clear
     self.falseButton.backgroundColor = .clear
   }
