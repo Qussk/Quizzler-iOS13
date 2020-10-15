@@ -37,8 +37,8 @@ class ViewController: UIViewController {
     self.scoreLabel.text = "score = \(quizManager.letScore())"
     self.QuestionLabel.text = "\(quizManager.letQuestiontext())"
     self.ProgressView.progress = 0.0
+    self.scoreLabel.textColor = .white
   }
-  
   
   
   //3.버튼인식
