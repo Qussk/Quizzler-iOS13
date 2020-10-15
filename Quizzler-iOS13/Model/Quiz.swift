@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+// 0.Question구조체를 만듦(데이터의 최소 단위)
+struct Question {
+  let q : String
+  let a : String
+}
