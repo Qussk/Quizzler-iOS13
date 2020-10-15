@@ -35,7 +35,7 @@ class ViewController: UIViewController {
   //2-0.값 설정
   func setData(){
     self.scoreLabel.text = "score = \(quizManager.letScore())"
-    self.QuestionLabel.text = "\(quizManager.letQuestiontext())"
+    self.QuestionLabel.text = "\(quizManager.getQuestion())"
     self.ProgressView.progress = 0.0
     self.scoreLabel.textColor = .white
   }
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
   
   //3.버튼인식
   @IBAction func buttonDidTap(_ sender: UIButton) {
-    
+        
     //3-1.클릭할 때마다
     self.QuestionLabel.text = self.quizManager.letQuestiontext()
     self.scoreLabel.text = "score = \(self.quizManager.letScore())"
