@@ -28,5 +28,33 @@ class QuizManager {
 ]
   
   
+  //2-2. 초깃값 생성
+  var score = 0
+  var number = 0
+  var pro = 0.0
+  
+  //2-3. 함수 만들기
+  //스코어 반환
+  func letScore()->Int{
+    return score
+  }
+  //문제 반환 -> number값에 따른 문제변경
+  func letQuestiontext()-> String{
+    //2-4.만약 11번째 보다 작으면 '문제번호+=1', 12번째 문제 도달시 '문제[0]'으로 초기화
+    if number < 11 {
+      number += 1
+    }else{
+      number = 0
+    }
+    return self.quizArray[number].q
+  }
+  
+  //진행률 반환
+  func letProBar(){
+    //2-5. 문제넘길때마다 pro게이지 상승(full게이지는 number을 1로 나눈 값)
+    pro = 1/Double(number)
+  }
+  
+  
   
 }

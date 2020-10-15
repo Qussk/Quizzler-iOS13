@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  //2-1.quizManager에 QuizManager할당.
+  let quizManager = QuizManager()
     
   //스코어,질문,진행률바
   @IBOutlet weak var scoreLabel: UILabel!
@@ -22,12 +25,14 @@ class ViewController: UIViewController {
     }
   
   
-  //2.값 설정
+  //2-0.값 설정
   func setData(){
-    self.scoreLabel.text = "score = 0"
-    self.QuestionLabel.text = "1"
+    self.scoreLabel.text = "score = \(quizManager.letScore())"
+    self.QuestionLabel.text = "\(quizManager.letQuestiontext())"
     self.ProgressView.progress = 0.0
   }
+  
+  
   
   //action
   @IBAction func buttonDidTap(_ sender: UIButton) {
