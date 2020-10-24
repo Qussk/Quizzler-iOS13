@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		7398F371253848BB00051817 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398F370253848BB00051817 /* Quiz.swift */; };
 		7398F376253849A900051817 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398F375253849A900051817 /* QuizManager.swift */; };
+=======
+		7398F36A253842FB00051817 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398F369253842FB00051817 /* Quiz.swift */; };
+>>>>>>> 92a63792698bd90b1f824b96e215b47a1b9a9136
 		AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */; };
 		AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */; };
 		AD4BDE4E22D878BA005BA4CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4BDE4D22D878BA005BA4CC /* ViewController.swift */; };
@@ -19,8 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		7398F370253848BB00051817 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		7398F375253849A900051817 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+=======
+		7398F369253842FB00051817 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+>>>>>>> 92a63792698bd90b1f824b96e215b47a1b9a9136
 		AD4BDE4622D878BA005BA4CC /* Quizzler-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quizzler-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,16 +51,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		7398F36D2538489400051817 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				7398F370253848BB00051817 /* Quiz.swift */,
 				7398F375253849A900051817 /* QuizManager.swift */,
+=======
+		7398F366253842A400051817 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7398F369253842FB00051817 /* Quiz.swift */,
+>>>>>>> 92a63792698bd90b1f824b96e215b47a1b9a9136
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		7398F36E2538489B00051817 /* View */ = {
+=======
+		7398F367253842AD00051817 /* View */ = {
+>>>>>>> 92a63792698bd90b1f824b96e215b47a1b9a9136
 			isa = PBXGroup;
 			children = (
 				AD4BDE4F22D878BA005BA4CC /* Main.storyboard */,
@@ -60,7 +79,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		7398F36F2538489F00051817 /* Controller */ = {
+=======
+		7398F368253842BA00051817 /* Controller */ = {
+>>>>>>> 92a63792698bd90b1f824b96e215b47a1b9a9136
 			isa = PBXGroup;
 			children = (
 				AD4BDE4D22D878BA005BA4CC /* ViewController.swift */,
@@ -88,9 +111,15 @@
 		AD4BDE4822D878BA005BA4CC /* Quizzler-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				7398F36F2538489F00051817 /* Controller */,
 				7398F36E2538489B00051817 /* View */,
 				7398F36D2538489400051817 /* Model */,
+=======
+				7398F368253842BA00051817 /* Controller */,
+				7398F367253842AD00051817 /* View */,
+				7398F366253842A400051817 /* Model */,
+>>>>>>> 92a63792698bd90b1f824b96e215b47a1b9a9136
 				AD4BDE4922D878BA005BA4CC /* AppDelegate.swift */,
 				AD4BDE4B22D878BA005BA4CC /* SceneDelegate.swift */,
 				AD4BDE5222D878BC005BA4CC /* Assets.xcassets */,
@@ -174,8 +203,12 @@
 			files = (
 				AD4BDE4E22D878BA005BA4CC /* ViewController.swift in Sources */,
 				AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				7398F376253849A900051817 /* QuizManager.swift in Sources */,
 				7398F371253848BB00051817 /* Quiz.swift in Sources */,
+=======
+				7398F36A253842FB00051817 /* Quiz.swift in Sources */,
+>>>>>>> 92a63792698bd90b1f824b96e215b47a1b9a9136
 				AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
